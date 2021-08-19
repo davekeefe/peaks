@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: argo_nginx_deployment_5932
+  name: argo-nginx-deployment-5932
+  annotations:
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: argo_nginx_deployment_5932

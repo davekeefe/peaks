@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: argo_mongodb_deployment_1100
+  name: argo-mongodb-deployment-1100
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: argo_mongodb_deployment_1100
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: argo_mongodb_deployment_1100
+    spec:
+      containers:
+      - image: docker-registry-8846.ntnxlab.local/k8sdsl/mongodb:0.1.1
+        imagePullPolicy: Always
+        name: mongo
+        ports:
+        - containerPort: 8080
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      imagePullSecrets:
+        - name: docker-registry-cred-cicdargocd04

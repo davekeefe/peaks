@@ -16,7 +16,7 @@ spec:
         app: argo_nginx_deployment_5932
     spec:
       containers:
-      - image: docker-registry-8846.ntnxlab.local/k8sdsl/nginx:0.1.1
+      - image: docker-registry-var.ntnxlab.local/k8sdsl/nginx:0.1.1
         imagePullPolicy: Always
         name: mongo
         env:
@@ -27,4 +27,4 @@ spec:
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       imagePullSecrets:
-        - name: docker-registry-cred-cicdargocd04
+        - name: docker-registry-cred-var

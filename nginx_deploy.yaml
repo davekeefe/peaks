@@ -16,7 +16,7 @@ spec:
         app: argo_nginx_deployment_5932
     spec:
       containers:
-      - image: docker-registry-var.ntnxlab.local/vmsdsl/nginx:0.1.1
+      - image: docker-registry-var.ntnxlab.local/cicd_project_var/nginx:0.1.1
         imagePullPolicy: Always
         name: mongo
         env:

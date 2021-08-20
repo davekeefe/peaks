@@ -16,7 +16,7 @@ spec:
         app: argo_mongodb_deployment_1100
     spec:
       containers:
-      - image: docker-registry-var.ntnxlab.local/vmsdsl/mongodb:0.1.1
+      - image: docker-registry-var.ntnxlab.local/cicd_project_var/mongodb:0.1.1
         imagePullPolicy: Always
         name: mongo
         ports:

@@ -16,7 +16,7 @@ spec:
         app: argo_nodejs_deployment_3494
     spec:
       containers:
-      - image: docker-registry-var.ntnxlab.local/vmsdsl/nodejs:0.1.1
+      - image: docker-registry-var.ntnxlab.local/cicd_project_var/nodejs:0.1.1
         imagePullPolicy: Always
         name: nodejs
         env:

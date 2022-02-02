@@ -21,7 +21,7 @@ spec:
         name: mongo
         env:
         - name: NODEJS_IP_ADDRESS
-          value: '10.42.70.156'
+          value: 'subnet-var.136'
         ports:
         - containerPort: 8080
       dnsPolicy: ClusterFirst

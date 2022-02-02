@@ -21,7 +21,7 @@ spec:
         name: nodejs
         env:
         - name: MONGODB_HOST
-          value: '10.42.70.152'
+          value: 'subnet-var.134'
         ports:
         - containerPort: 8080
       dnsPolicy: ClusterFirst

@@ -24,6 +24,8 @@ spec:
           value: 'subnet-var.134'
         ports:
         - containerPort: 8080
+      nodeSelector:
+        usage-type: cpu-optimized
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       imagePullSecrets:

@@ -21,6 +21,8 @@ spec:
         name: mongo
         ports:
         - containerPort: 8080
+      nodeSelector:
+        usage-type: memory-optimized
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       imagePullSecrets:

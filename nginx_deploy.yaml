@@ -24,6 +24,8 @@ spec:
           value: 'subnet-var.136'
         ports:
         - containerPort: 8080
+      nodeSelector:
+        usage-type: general
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       imagePullSecrets:
